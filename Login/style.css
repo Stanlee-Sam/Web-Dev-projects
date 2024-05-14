@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root{
+    --primarycolor : #141314;
+    --secondarycolor : #fff;
+    --altcolor1 : #20d0d6;
+    --altcolor2 : #596161;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+}
+
+body{
+    background-color: var(--primarycolor);
+    align-items: center;
+    /*place-items: center;*/
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+    justify-content: center;
+    overflow: hidden;
+      
+}
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    /*margin: 170px auto;*/
+}
+.name{
+    color: var(--secondarycolor);
+    line-height: 80px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+p{
+    color: var(--altcolor2);
+}
+details{
+    padding-top: 30px;
+}
+
+.wrapper .name{
+    background-color: var(--altcolor2);
+}
+
+.wrapper{
+    width: 100%;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+}
+.wrapper form{
+    padding: 30px, 20px, 25px, 20px;
+
+}
+.details{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px ;
+    background-color: var(--altcolor2);
+    border-radius: 5px;
+    /*border: 1px solid lightgray;*/
+    
+}
+.wrapper form .details input{
+    height: 30px;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.pass{
+    color: var(--altcolor1);
+
+}
+.btn input{
+    font-size: 18px;
+    width: 75%;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--altcolor2);   
+    border: 1px solid var(--altcolor2);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-right: 10px;
+}
+.wrapper form .pass a{
+    text-decoration: none;
+    color: var(--altcolor1);
+    margin-left: 20px;
+
+}
+.wrapper form .sup{
+   
+    padding-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.wrapper form .sup a{
+    text-decoration: none;
+    color: var(--altcolor1);  
+   
+}
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.wrapper form .sup a:hover{
+    text-decoration: underline;
+}
+.btn input:hover{
+ background-color: #20d0d6;
+}
