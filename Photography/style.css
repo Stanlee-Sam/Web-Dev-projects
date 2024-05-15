@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Freeman", sans-serif;
+}
+:root{
+    --primary-color: #080808;
+    --secondary-color: #fcf7f7;
+    --altcolor: #8d918e;
+}
+
+h1 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+.nav-bar{
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 12;
+    
+}
+.nav-bar .pagetitle h1{
+    color: var(--secondary-color);
+    /*height: 30px;*/
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 30px;   
+}
+.nav-bar .nav-links ul{
+    display: inline-flex;
+}
+
+.nav-bar .nav-links ul li{
+    list-style: none;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.nav-links {
+    
+    display: flex;
+}
+
+.nav-bar .nav-links ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 20px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    
+}
+.nav-bar .nav-links ul li a:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+}
+.img{
+    background: url(./assets/universe\ of\ chaos.jpeg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.center{
+    position:absolute;
+    top: 52%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+.center .maintitle h1{
+    color: var(--secondary-color);
+    font-size: 55px;
+    font-weight: 700;
+}
+.center .maintitle p{
+    color: var(--secondary-color);
+    font-size: 35px;
+    font-weight: 600;
+}
+.center .btns{
+    margin: 20px;
+}
+.center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid var(--secondary-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+/*.center .btns button:first-child{
+    color: var(--secondary-color);
+    background: none;
+}*/
+.center .btns .btnmore{
+    color: var(--secondary-color);
+    background: none;
+}
+.center .btns .btnmore:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+.center .btns .btnsub:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
