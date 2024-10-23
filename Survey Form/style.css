@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Margarine&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+:root {
+  --primarycolor: black;
+  --secondarycolor: white;
+  --altcolor: grey;
+}
+body {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  background-color: var(--primarycolor);
+}
+h1 {
+  color: var(--secondarycolor);
+}
+#description {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: var(--secondarycolor);
+}
+
+form {
+  display: grid;
+  background: var(--altcolor);
+  border-radius: 5px;
+  width: 80vh;
+}
+input {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  border-bottom-width: 1rem solid;
+  border-radius: 5px;
+}
+label {
+  margin-left: 10px;
+}
+
+#dropdown {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+form p {
+  margin-left: 10px;
+}
+
+.radios {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checks {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  margin: 10px;
+  border-radius: 5px;
+  height: 20vh;
+}
+
+button {
+  width: 80%;
+  justify-self: center;
+  background-color: var(--primarycolor);
+  color: var(--secondarycolor);
+}
+button:hover {
+  background: white;
+  color: var(--primarycolor);
+}
